@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col s10 offset-s1" id="panel">
+      <h4 id="title">sign up</h4>
+      <form class="col s12" (submit)="AddUser(userForm)" #userForm="ngForm">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="first_name" type="text" class="validate" name="username"  ngModel/>
+            <label for="first_name">UserName</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate" name="password"  ngModel/>
+            <label for="password">Password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate" name="email"  ngModel/>
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row col sm6 offset-s5">
+          <button
+            class="btn waves-effect waves-light"
+            type="submit"
+
+
+          >
+            SignUp
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

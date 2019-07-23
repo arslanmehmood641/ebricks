@@ -1,0 +1,19 @@
+.round{
+  width:150px !important;
+  height:150px !important;
+  border-radius: 50% !important;
+  margin: 0 auto;
+  top:0px !important;
+}
+.main-div{
+
+}
+.peopleDiv{
+  margin-left:100px;
+  padding-left: 200px;
+  width :90% !important;
+  border: 2px
+}
+.btn-padding{
+  margin:10px;
+}

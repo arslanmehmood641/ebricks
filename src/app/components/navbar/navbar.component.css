@@ -1,0 +1,11 @@
+.main{
+  margin-bottom: 0px
+}
+span.badge {
+  font-size: 20px;
+
+   color :red;
+   background: white;
+  padding-right: 35px;
+  margin-top: 10px
+}

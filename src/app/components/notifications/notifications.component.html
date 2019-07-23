@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<div class="container " >
+  <div class="col s12" *ngFor="let notification of notifications">
+    <div class="row">
+      <div class="col s12 m8 m1">
+  <ul class="collection col s12 m10">
+  <li class="collection-item avatar">
+  <img src="../../../assets/img/resort1.jpg" class="circle" alt="">
+  <span class="title">
+  {{notification.message}}
+  </span>
+  <div class="secondary">
+
+  <p>
+    {{getTime(notification.createdOn)}}
+  </p>
+  </div>
+  </li>
+  </ul>
+      </div>
+    </div>
+
+    </div>
+</div>

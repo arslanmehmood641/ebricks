@@ -1,0 +1,40 @@
+<nav class="main nav-extended">
+  <div >
+    <div class="nav-wrapper blue">
+      <a href="#" class="brand-logo">Chatt App</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <li class='dropdown-trigger' href='#' data-target='dropdown1'>
+              <i class="glyphicon glyphicon-bell" style="color: white"></i>
+              <span class="badge" >{{this.count}}</span>
+              <ul id='dropdown1' class='dropdown-content col s12 '>
+                  <li class="collection-item avatar" >
+                      <li class="collection-item avatar" *ngFor="let notification of notifications" [routerLink]="['/chat',notification.senderName]" routerLinkActive="router-link-active">
+                          <img style="display: inline" src="https://lh5.googleusercontent.com/-d6V2Y2HV0FU/AAAAAAAAAAI/AAAAAAAAACA/iuRJhY_1XPs/s96-c/photo.jpg" height="50" width="50" alt="10" class="circle responsive-img"> <!-- notice the "circle" class -->
+                      {{notification.message}}
+                          <p style="margin-left: 50px">
+                      {{getTime(notification.createdOn)}}
+                          </p>
+
+                          </li>
+                  <li class="collection-item avatar"><a href="#!">two</a></li>
+
+                </ul>
+
+          </li>
+          <li><a (click)="logOut()">Logout</a></li>
+        <li><a [routerLink]="['/followers']" routerLinkActive="router-link-active" >follower</a></li>
+        <li><a [routerLink]="['/followings']" routerLinkActive="router-link-active" >following</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+</nav>
+
