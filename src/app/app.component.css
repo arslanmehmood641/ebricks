@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  padding: 30px;
+}
+.header {
+  background-image: linear-gradient(to right bottom, #5bac4c44, #28b485),
+    url("../assets/images/hero.jpg");
+  background-size: cover;
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
