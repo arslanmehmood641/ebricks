@@ -9,11 +9,21 @@
       "connectionType": "replica"
     }
 
-username,password and hostname will change according to connection string
+username,password,hostname and dbname will change according to connection string.
 
-## Development server
+## changes in database.json file 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+let dbConnectionURL;
+    if (dbConfig.get('connectionType') === 'directed') {
+
+    const dbConnectionURL = `mongodb://${dbConfig.get('host')}:${dbConfig.get('port')}/${dbConfig.get('dbName')}`;
+      dbConnectionURL = `mongodb://${dbConfig.get('host')}:${dbConfig.get('port')}/${dbConfig.get('dbName')}`;
+
+    } else {
+
+      dbConnectionURL = `mongodb+srv://${dbConfig.get('userName')}:${dbConfig.get('password')}@${dbConfig.get('host')}/${dbConfig.get('dbName')}`;
+
+    }
 
 ## Code scaffolding
 
