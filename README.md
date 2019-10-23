@@ -1,6 +1,7 @@
 # changes in serverName.json
 
 "database": {
+
       "host": "mesmer-test-db-kwtli.mongodb.net",
       
       "port": "27017",
@@ -33,4 +34,4 @@ let dbConnectionURL;
 
 ## update mongoose packege
 
-"mongoose": "4.13.7" replace it with "mongoose": "^5.7.6"
+"mongoose": "4.13.7" should replaced with "mongoose": "^5.7.6"
