@@ -2,10 +2,15 @@
 
 "database": {
       "host": "mesmer-test-db-kwtli.mongodb.net",
+      
       "port": "27017",
+      
       "userName": "mesmer",
+      
       "password": "aPpSiGhT!401",
+      
       "dbName": "qa-test-harness",
+      
       "connectionType": "replica"
     }
 
@@ -14,9 +19,9 @@ username,password,hostname and dbname will change according to connection string
 ## changes in database.json file 
 
 let dbConnectionURL;
+
     if (dbConfig.get('connectionType') === 'directed') {
 
-    const dbConnectionURL = `mongodb://${dbConfig.get('host')}:${dbConfig.get('port')}/${dbConfig.get('dbName')}`;
       dbConnectionURL = `mongodb://${dbConfig.get('host')}:${dbConfig.get('port')}/${dbConfig.get('dbName')}`;
 
     } else {
