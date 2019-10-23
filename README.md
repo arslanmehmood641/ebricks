@@ -1,6 +1,15 @@
-# ChattApplication
+# changes in serverName.json
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+"database": {
+      "host": "mesmer-test-db-kwtli.mongodb.net",
+      "port": "27017",
+      "userName": "mesmer",
+      "password": "aPpSiGhT!401",
+      "dbName": "qa-test-harness",
+      "connectionType": "replica"
+    }
+
+username,password and hostname will change according to connection string
 
 ## Development server
 
